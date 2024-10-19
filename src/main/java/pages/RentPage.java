@@ -81,7 +81,7 @@ public class RentPage extends BasePage {
     }
 
     // Метод для нажатия второй кнопки "Да" для подтверждения заказа
-    public RentPage clickOrderButton2() {
+    public RentPage clickConfirmOrderButton() {
         orderButton2.click();
         return new RentPage(driver);
     }

@@ -1,4 +1,5 @@
 package base;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.After;
 import org.junit.Before;
@@ -8,6 +9,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class BaseTest {
     protected WebDriver driver;
+    private static String URL = "https://qa-scooter.praktikum-services.ru/";
 
     @Before
     public void setUp() {
@@ -27,7 +29,7 @@ public class BaseTest {
         }
 
         driver.manage().window().maximize();
-        driver.get("https://qa-scooter.praktikum-services.ru/");
+        driver.get(URL);
     }
 
     @After

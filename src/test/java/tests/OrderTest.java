@@ -70,7 +70,7 @@ public class OrderTest extends BaseTest {
         RentPage rentPage = new RentPage(driver)
                 .fillRentForm(deliveryDay, rentTerm, color, comment)
                 .clickOrderButton()
-                .clickOrderButton2();
+                .clickConfirmOrderButton();
 
         Assert.assertTrue(rentPage.isOrderConfirmationDisplayed());
     }
